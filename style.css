@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 1px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+nav {
+    position: absolute;
+    height: 54px;
+    width: 100%;
+}
+.dropdown-menu {
+    position: absolute;
+    margin-left: 10%;
+}
+.navbar-nav {
+    position: absolute;
+    right: 20%;
+}
+.search-box {
+    width: 268; 
+    height: 36px; 
+    margin-bottom: 20px; 
+    left: 33%;
+    align-items: center; 
+    position: absolute;
+}
+#menu {
+    top: 15px;
+    margin-bottom: 32px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+#menu::-webkit-scrollbar {
+    display: none;
+}
+#menu-item {
+    position: relative;
+    
+}
+#menu-item img {
+    object-fit: cover;
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    border: 2px solid rgb(238, 39, 82);  
+    padding: 2px;
+
+}
+#menu-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border-radius: inherit;
+    z-index: -1;
+}
+.story {
+    margin: 8px;
+}
+
+.card {
+    background-color: #F5F6F7;
+}
+.card-img-top {
+    max-height: 470px;
+    max-width: 470px;
+}
+.space {
+    width: 100%;
+}
+.yorum {
+    outline: none;
+    flex-grow: 1;   
+}
+.search-form {
+    position: relative;
+    top: 28px;
+    left: 14px;   
+}
+.rightpanel {
+    position: fixed;
+    top: 65px;
+    left: 51%;
+}
+.rightpanellinks {
+    color: lightgrey;
+    margin: 2px;
+    font-size: 11px;
+}
+.rightpanellinks:hover {
+    text-decoration: overline;
+    color: lightgrey;
+}
+.takip {
+    position: absolute;
+    right: 5%;
+    
+}
+.float-right {
+    font-size: 13px; 
+    color: #0095f6; 
+    margin-top: 5px;
+}
